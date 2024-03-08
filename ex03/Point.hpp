@@ -6,7 +6,7 @@
 /*   By: yachen <yachen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 11:30:23 by yachen            #+#    #+#             */
-/*   Updated: 2024/03/08 11:58:54 by yachen           ###   ########.fr       */
+/*   Updated: 2024/03/08 17:54:30 by yachen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class Point
 	private:
 		Fixed const x;
 		Fixed const y;
+		Fixed z;
 		
 	public:
 		Point();
@@ -28,8 +29,12 @@ class Point
 		Point& operator=( const Point& other );
 		~Point();
 
+		Fixed getX() const;
+		Fixed getY() const;
+		Fixed getZ() const;
+		
 };
 
-bool bsp( Point const a, Point const b, Point const c, Point const point );
+bool  bsp( Point const a, Point const b, Point const c, Point const point );
 
 #endif
