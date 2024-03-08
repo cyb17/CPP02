@@ -6,25 +6,11 @@
 /*   By: yachen <yachen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 10:19:39 by yachen            #+#    #+#             */
-/*   Updated: 2024/03/07 18:05:57 by yachen           ###   ########.fr       */
+/*   Updated: 2024/03/08 11:28:00 by yachen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-
-// int main( void )
-// {
-// 	Fixed a;
-// 	Fixed const b( Fixed( 5.10f ) / Fixed( 1.0f ) );
-// 	// std::cout << a << std::endl;
-// 	// std::cout << ++a << std::endl;
-// 	// std::cout << a << std::endl;
-// 	// std::cout << a++ << std::endl;
-// 	// std::cout << a << std::endl;
-// 	std::cout << "b: " << b << std::endl;
-// 	// std::cout << Fixed::max( a, b ) << std::endl;
-// 	return 0;
-// }
 
 int	main( void )
 {
@@ -43,14 +29,25 @@ int	main( void )
 	Fixed a;
 	std::cout << "a1: "<< a << std::endl;
 	std::cout << "a2: "<< ++a << std::endl;
-	std::cout << "a3: "<< a << std::endl;
-	std::cout << "a2: "<< ++a << std::endl;
-	std::cout << "a3: "<< a << std::endl;
-	std::cout << "a2: "<< ++a << std::endl;
-	std::cout << "a3: "<< a << std::endl;
-
-	// std::cout << "a4: "<< a++ << std::endl;
-	// std::cout << "a5: "<< a << std::endl;
-
+	std::cout << "a4: "<< a++ << std::endl;
+	std::cout << "a5: "<< a << std::endl;
+	Fixed b(2);
+	std::cout << "b2: "<< b << std::endl;
+	std::cout << "b1: "<< --b << std::endl;
+	std::cout << "b2: "<< b << std::endl;
+	std::cout << "b4: "<< b-- << std::endl;
+	std::cout << "b5: "<< b << std::endl;
+	std::cout << "max:" << Fixed::max(a, b) << std::endl;
+	if (a != b)
+		std::cout << "a != b" << std::endl;
+	Fixed c;
+	Fixed d;
+	if (c >= d)
+		std::cout << "c >= d" << std::endl;
+	if (c <= d)
+		std::cout << "c <= d" << std::endl;
+	Fixed const e;
+	Fixed const f;
+	std::cout << "max:" << Fixed::max(e, f) << std::endl;
 	return (0);
 }
