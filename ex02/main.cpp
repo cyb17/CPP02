@@ -6,7 +6,7 @@
 /*   By: yachen <yachen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 10:19:39 by yachen            #+#    #+#             */
-/*   Updated: 2024/03/08 11:28:00 by yachen           ###   ########.fr       */
+/*   Updated: 2024/03/12 17:06:56 by yachen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,20 @@ int	main( void )
 		std::cout << "c <= d" << std::endl;
 	Fixed const e;
 	Fixed const f;
-	std::cout << "max:" << Fixed::max(e, f) << std::endl;
+	std::cout << "min:" << Fixed::min(a, b) << std::endl;
 	return (0);
 }
+
+// int main( void )
+// {
+// 	Fixed a;
+// 	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+// 	std::cout << a << std::endl;
+// 	std::cout << ++a << std::endl;
+// 	std::cout << a << std::endl;
+// 	std::cout << a++ << std::endl;
+// 	std::cout << a << std::endl;
+// 	std::cout << b << std::endl;
+// 	std::cout << Fixed::max( a, b ) << std::endl;
+// 	return 0;
+// }

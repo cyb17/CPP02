@@ -6,7 +6,7 @@
 /*   By: yachen <yachen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 11:19:31 by yachen            #+#    #+#             */
-/*   Updated: 2024/03/06 13:23:57 by yachen           ###   ########.fr       */
+/*   Updated: 2024/03/12 16:47:59 by yachen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ class	Fixed
 	public:
 		
 		Fixed();
-		Fixed(const Fixed& other);
-		Fixed&	operator=(const Fixed& other);
+		Fixed( const Fixed& other );
+		Fixed&	operator=( const Fixed& other );
 		~Fixed();
 
-		int		getRawBits(void) const;
-		void	setRawBits(int const raw);
+		int		getRawBits( void ) const;
+		void	setRawBits( int const raw );
 };
 
 #endif
